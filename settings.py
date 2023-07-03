@@ -1,0 +1,11 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SQLALCHEMY_DATABASE_URL = os.getenv('SQLALCHEMY_DATABASE_URL')
+SERVICE_ACCOUNT_FILE = os.getenv('SERVICE_ACCOUNT_FILE')
+STORAGE_BUCKET_NAME = os.getenv('STORAGE_BUCKET_NAME')
+CLOUD_SQL_INSTANCE_NAME = os.getenv('CLOUD_SQL_INSTANCE_NAME')
+
+
